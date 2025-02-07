@@ -12,7 +12,7 @@ Veja abaixo como o quiz se parece em ação:
 ## 🚀 Acesse o Projeto  
 Teste seus conhecimentos agora mesmo!  
 
-🔗 [Acesse o Quiz de Programadores](https://geovanigaldino.github.io/quiz-de-programadores/)
+🔗 [Acesse o Quiz de Programadores](https://geovanigaldino.github.io/quiz-programadores/)
 
 
 ## 🚀 Tecnologias Utilizadas
