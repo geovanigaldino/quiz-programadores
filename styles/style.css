@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Great+Vibes&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Variáveis */
+:root {
+    --cor-primaria: #0A369D;
+    --cor-secundaria: #f9f9f9;
+}
+
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+header h1, header p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--cor-secundaria);
+}
+
+header a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h2 {
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+}
+
+/* Formulários */
+input[type="radio"], 
+input[type="checkbox"] {
+    accent-color: var(--cor-primaria);
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="date"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 2px solid var(--cor-primaria);
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--cor-primaria);
+}
+
+input::placeholder {
+    color: var(--cor-primaria);
+}
+
+select {
+    cursor: pointer;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, table tfoot td {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding: 1rem;
+}
+
+td {
+    color: var(--cor-primaria);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Outros elementos */
+img {
+    width: 5rem;
+    border-radius: 5px;
+}
+
+details {
+    background-color: var(--cor-primaria);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+summary {
+    color: var(--cor-secundaria);
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+ol {
+    margin-left: 1.5rem;
+}
+
+ol li {
+    padding: 0.2rem;
+    color: var(--cor-primaria);
+}
+
+fieldset {
+    border: 2px solid var(--cor-primaria);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+legend {
+    color: var(--cor-primaria);
+    padding: 0 0.5rem;
+}
+
+/* Botões */
+.myButton {
+    box-shadow: 0px 10px 10px -7px #0311d6;
+    background-color: var(--cor-primaria);
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--cor-secundaria);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #0311d6;
+}
+
+.myButton:hover {
+    background-color: #0311d6;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-primaria);
+    padding: 15px;
+    text-align: center;
+}
+
+.paragrafo-footer, footer a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+/* Responsividade */
+/* Dispositivos móveis */
+@media (max-width: 460px) {
+    header {
+        font-size: 12px;
+    }
+    .imagem {
+        width: 50%;
+    }
+}
+
+/* Telas grandes */
+@media (min-width: 769px) {
+    body {
+        font-size: 16px;
+    }
+    .imagem {
+        width: 20%;
+    }
+}

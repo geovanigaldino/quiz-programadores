@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Great+Vibes&family=Inter:wght@400;700&family=Oswald:wght@200;700&family=Work+Sans:wght@100;900&display=swap');
+
+/* Variáveis */
+:root {
+    --cor-primaria: #0A369D;
+    --cor-secundaria: #f9f9f9;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 40px; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    gap: 20px;
+}
+
+nav a {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: var(--cor-secundaria);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+section h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+}
+
+section a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Links sociais */
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #4a4a4a;
+}
+
+/* Habilidades e Projetos */
+.habilidades, .projetos {
+    margin-bottom: 32px;
+}
+
+.habilidades-title, .projetos-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.habilidades-grid, .projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.habilidade-card, .projeto-card {
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.774);
+}
+
+.habilidade-descricao, .projeto-descricao {
+    color: var(--cor-primaria);
+}
+
+/* Tech Badges */
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+.badge {
+    padding: 0.5rem 1rem;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 15px 5px;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
