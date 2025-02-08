@@ -2,7 +2,7 @@
 
 Um quiz interativo desenvolvido com HTML e CSS para testar conhecimentos em programação.
 
-Este quiz foi desenvolvido para testar seus conhecimentos em programação, abrangendo alguns tópicos como:
+Este quiz foi desenvolvido para testar seus conhecimentos em programação.
 
 ### 📸 Preview  
 Veja abaixo como o quiz se parece em ação:  
